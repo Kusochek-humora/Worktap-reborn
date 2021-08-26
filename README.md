@@ -29,4 +29,4 @@ gulp dev
 Макет
 =====
 
-https://www.figma.com/file/IBH3IYmwkspIWuERxjDcGj/Garne
+https://www.figma.com/file/U0QWFkw1vENJw836Nx89uz/Worktap.kz?node-id=0%3A1
