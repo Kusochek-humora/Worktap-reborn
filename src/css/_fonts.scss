@@ -6,3 +6,35 @@
 //     font-weight: 900;
 //     font-style: normal;
 // }
+
+
+@font-face {
+    font-family: 'Monsterrat';
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    src: url('./fonts/Montserrat-regular.ttf'),
+        url("../fonts/montserrat-regular.woff") format("woff"),
+        url("../fonts/montserrat-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Monsterrat Bold';
+    font-family: 'Monsterrat';
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    src: url('./fonts/Montserrat-bold.ttf'),
+        url("../fonts/montserrat-bold.woff") format("woff"),
+        url("../fonts/montserrat-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Monsterrat Light';
+    src: url('./fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Monsterrat Medium';
+    src: url('./fonts/Montserrat-Medium.ttf');
+}

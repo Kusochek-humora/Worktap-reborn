@@ -14,15 +14,7 @@ body {
 }
 
 body {
-	font-family: 'TTNorms', serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-    position: relative;
 
-    &.fixed {
-        overflow: hidden;
-    }
 }
 
 
@@ -41,18 +33,10 @@ h6 {
 a {
     display: inline-block;
     text-decoration: none;
-    color: #000;
-
-    &.button {
-        display: block;
-        max-width: max-content;
-        width: 100%;
-    }
+    color:inherit
 }
 
-p {
-    margin: 0;
-}
+
 
 ul, ol, li {
     margin: 0;
@@ -62,23 +46,9 @@ ul, ol, li {
 
 button {
     display: block;
-    background: none;
     border: none;
     padding: 0;
     cursor: pointer;
-}
-
-.button{
-    
-}
-
-
-.how{
-    &__inner{
-        &-btn{
-            
-        }
-    }
 }
 
 
@@ -103,7 +73,3 @@ button {
     margin: 0 auto;
 }
 
-// .container-fluid{
-//     max-width: 100%;
-// 	margin: 0 auto;
-// }

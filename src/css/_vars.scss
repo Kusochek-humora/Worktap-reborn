@@ -1,5 +1,7 @@
-$green:green;
-@mixin flex-center{
+$green:rgba(29, 191, 115, 1);
+$orange:rgba(251, 164, 87, 1);
+
+@mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;

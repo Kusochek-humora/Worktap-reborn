@@ -83,7 +83,7 @@ export const buildJs = (done) => {
 export const buildCss = (done) => {
 	gulp.src([
 			'node_modules/normalize.css/normalize.css',
-			'node_modules/jquery-form-styler/dist/jquery.formstyler.css'
+		
 		])
 		.pipe(prefixer())
 		.pipe(csso())
