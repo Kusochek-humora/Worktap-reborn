@@ -1,5 +1,5 @@
 {
-  "name": "garne-frontend",
+  "name": "woktap",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -7,7 +7,7 @@
   "scripts": {
     "start": "gulp"
   },
-  "author": "Salik",
+  "author": "Salik-loh",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.7",
