@@ -1,40 +1,39 @@
-// @font-face {
-//     font-family: "TTNorms";
-//     src: url("../fonts/TTNorms-Black.woff") format("woff"),
-//     url("../fonts/TTNorms-Black.woff2") format("woff2");
-//     font-display: swap;
-//     font-weight: 900;
-//     font-style: normal;
-// }
-
-
 @font-face {
-    font-family: 'Monsterrat';
+    font-family: 'Monsterrat-regular';
     font-weight: 400;
     font-display: swap;
     font-style: normal;
-    src: url('./fonts/Montserrat-regular.ttf'),
+    src:
         url("../fonts/montserrat-regular.woff") format("woff"),
         url("../fonts/montserrat-regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Monsterrat Bold';
-    font-family: 'Monsterrat';
-    font-weight: 400;
+    font-family: 'Monsterrat-bold';
+    font-weight: 700;
     font-display: swap;
     font-style: normal;
-    src: url('./fonts/Montserrat-bold.ttf'),
+    src:
         url("../fonts/montserrat-bold.woff") format("woff"),
         url("../fonts/montserrat-bold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Monsterrat Light';
-    src: url('./fonts/Montserrat-Light.ttf');
+    font-family: 'Monsterrat-light';
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+    src:
+        url("../fonts/montserrat-light.woff") format("woff"),
+        url("../fonts/montserrat-light.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Monsterrat Medium';
-    src: url('./fonts/Montserrat-Medium.ttf');
+    font-family: 'Monsterrat-medium';
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+    src:
+        url("../fonts/montserrat-medium.woff") format("woff"),
+        url("../fonts/montserrat-medium.woff2") format("woff2");
 }
