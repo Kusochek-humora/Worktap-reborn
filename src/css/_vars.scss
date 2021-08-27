@@ -7,6 +7,11 @@ $orange:rgba(251, 164, 87, 1);
     align-items: center;
 }
 
+@mixin mont-300 {
+    font-family: 'Monsterrat-light';
+    font-weight: 300;
+}
+
 @mixin mont-400 {
     font-family: 'Monsterrat-regular';
     font-weight: 400;
@@ -17,9 +22,9 @@ $orange:rgba(251, 164, 87, 1);
     font-weight: 500;
 }
 
-@mixin mont-300 {
-    font-family: 'Monsterrat-light';
-    font-weight: 300;
+@mixin mont-600 {
+    font-family: 'Monsterrat-semibold';
+    font-weight: 600;
 }
 
 @mixin mont-700 {
