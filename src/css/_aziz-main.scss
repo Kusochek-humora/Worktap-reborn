@@ -1,0 +1,28 @@
+.header {
+	&__inner {
+		margin: 50px 0 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+    position: relative;
+	}
+}
+
+.menu{
+	&__list{
+		display: flex;
+
+	}
+
+	&__list-item+.menu__list-item{
+		margin-left: 40px;
+	}
+	
+}
+
+.header__btn{
+	display: flex;
+	&-registration{
+		margin-right: 30px;
+	}
+}
