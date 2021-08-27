@@ -1,7 +1,7 @@
 .header {
-	background-color: #F7F6FF;
+	background-color: #f7f6ff;
 	&__inner {
-		margin: 50px 0 60px;
+		padding: 50px 0 60px;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -23,7 +23,7 @@
 	}
 }
 
-.header-btn {
+.header-box {
 	display: flex;
 	&__registration {
 		margin-right: 30px;
@@ -32,17 +32,83 @@
 		font-size: 16px;
 		line-height: 20px;
 		border-radius: 50px;
-		background-color: #F2F0FE;
+		background-color: #f2f0fe;
 		@include mont-600;
 	}
 
-	&__enter {
+	&__login {
 		padding: 10px 30px;
-		color: #F6FAFD;
+		color: #f6fafd;
 		font-size: 16px;
 		line-height: 20px;
 		border-radius: 50px;
 		background-color: $green;
 		@include mont-600;
+	}
+}
+
+.footer {
+	padding: 50px 0 100px;
+}
+
+.footer-top {
+	&__items {
+		margin-bottom: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		@include mont-700;
+		font-size: 24px;
+		line-height: 29px;
+		color: #222;
+	}
+
+	&__list {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__list-social {
+		display: flex;
+	}
+
+	&__list-item + .footer-top__list-item {
+		margin-top: 10px;
+	}
+
+	&__list-item-social + .footer-top__list-item-social {
+		margin-left: 30px;
+	}
+	
+	&__img-social:hover {
+	
+		path{
+			fill: $green;
+		}
+
+		
+		
+	}
+
+	.footer-inst:hover{
+		circle{
+			fill: $green;
+		}
+	}
+	
+}
+
+.footer-bottom {
+	&__text {
+		text-align: center;
+		@include mont-500;
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
