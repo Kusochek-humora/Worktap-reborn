@@ -14,7 +14,8 @@ body {
 }
 
 body {
-
+    @include mont-400;
+    font-size: inherit;
 }
 
 
@@ -33,12 +34,14 @@ h6 {
 a {
     display: inline-block;
     text-decoration: none;
-    color:inherit
+    color: inherit
 }
 
 
 
-ul, ol, li {
+ul,
+ol,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -67,9 +70,8 @@ button {
 }
 
 .container {
-    // max-width: 392px;
+    max-width: 1300px;
     width: 100%;
-    padding: 0 16px 0;
+    padding: 0 10px 0;
     margin: 0 auto;
 }
-

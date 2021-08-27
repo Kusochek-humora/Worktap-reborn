@@ -6,3 +6,23 @@ $orange:rgba(251, 164, 87, 1);
     justify-content: center;
     align-items: center;
 }
+
+@mixin mont-400 {
+    font-family: 'Monsterrat-regular';
+    font-weight: 400;
+}
+
+@mixin mont-500 {
+    font-family: 'Monsterrat-medium';
+    font-weight: 500;
+}
+
+@mixin mont-300 {
+    font-family: 'Monsterrat-light';
+    font-weight: 300;
+}
+
+@mixin mont-700 {
+    font-family: 'Monsterrat-bold';
+    font-weight: 700;
+}
