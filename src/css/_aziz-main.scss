@@ -2,27 +2,44 @@
 	&__inner {
 		margin: 50px 0 60px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
-    position: relative;
+		position: relative;
 	}
 }
 
-.menu{
-	&__list{
+.menu {
+	&__list {
 		display: flex;
-
+		@include mont-500;
+		font-size: 16px;
+		line-height: 20px;
+		color: #222;
 	}
 
-	&__list-item+.menu__list-item{
+	&__list-item + .menu__list-item {
 		margin-left: 40px;
 	}
-	
 }
 
-.header__btn{
+.header-btn {
 	display: flex;
-	&-registration{
+	&__registration {
 		margin-right: 30px;
+		padding: 10px 30px;
+		color: $green;
+		font-size: 16px;
+		line-height: 20px;
+		border-radius: 50px;
+		background-color: #F2F0FE;
+	}
+
+	&__enter {
+		padding: 10px 30px;
+		color: #F6FAFD;
+		font-size: 16px;
+		line-height: 20px;
+		border-radius: 50px;
+		background-color: $green;
 	}
 }
