@@ -236,3 +236,21 @@
 		margin: 0 auto;
 	}
 }
+
+.catalog{
+
+	&__top{
+		margin-bottom: 40px;
+	}
+
+	&__item{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__box{
+		display: flex;
+	}
+
+	
+}
