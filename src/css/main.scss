@@ -1,19 +1,48 @@
 @import "vars";
 @import "global";
 @import "fonts";
-@import "reset";
+
 @import "aziz-main";
 @import "aziz-media";
 
 
 
-body {
-  
+.header-box {
+    display: flex;
+    align-items: center;
+}
+
+.header-widget {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+
+    &__item {
+        margin-right: 34px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        &.header__name {
+            margin-right: 16px;
+        }
+
+        &.header__logo {
+            margin-right: 20px;
+        }
+
+    }
 }
 
 
 
-
-
-
+@import "reset";
 @import "media";
