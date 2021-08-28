@@ -39,7 +39,7 @@ export const buildJs = (done) => {
 	gulp.src([
 			'node_modules/jquery/dist/jquery.min.js',
 			'node_modules/slick-carousel/slick/slick.js',
-
+			'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
 			'src/js/vendor/*.js'
 		])
 		.pipe(plumber())
@@ -83,6 +83,7 @@ export const buildJs = (done) => {
 export const buildCss = (done) => {
 	gulp.src([
 			'node_modules/normalize.css/normalize.css',
+			'node_modules/magnific-popup/dist/magnific-popup.css'
 		
 		])
 		.pipe(prefixer())
@@ -139,7 +140,7 @@ export const buildImage = (done) => {
 // };
 //Fonts
 export const buildFont = () => {
-	return gulp.src('src/fonts//*.*')
+	return gulp.src('src/fonts/*.*')
 		.pipe(plumber())
 		.pipe(gulp.dest('dist/fonts'))
 		.pipe(sync.stream({
@@ -178,7 +179,8 @@ export const buildAll = gulp.series(
 		buildImage,
 		buildJs,
 		buildCss,
-		buildVideo
+		buildVideo,
+		buildFont
 	),
 	fixPath
 );
