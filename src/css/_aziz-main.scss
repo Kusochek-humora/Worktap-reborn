@@ -424,15 +424,6 @@
 		margin-bottom: 50px;
 	}
 
-	&__item {
-		width: 420px;
-		height: 270px;
-		padding: 20px;
-		border: 1px solid #f2f0fe;
-		box-sizing: border-box;
-		border-radius: 20px;
-	}
-
 	&__box {
 		display: flex;
 		margin-bottom: 30px;
@@ -458,35 +449,10 @@
 		margin-bottom: 30px;
 	}
 
-	&__btn {
-		width: 380px;
-		height: 40px;
-		border: 1px solid #1dbf73;
-		box-sizing: border-box;
-		border-radius: 50px;
-		color: $green;
-		@include mont-500;
-		font-size: 14px;
-		line-height: 17px;
-		transition: all 0.3s;
-
-		&:hover {
-			background-color: $green;
-			color: #fff;
-		}
-	}
-
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 40px 30px;
-	}
-
-	&__item-last {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: #F2F0FE;
 	}
 
 	&__link {
@@ -494,5 +460,61 @@
 		font-size: 18px;
 		line-height: 22px;
 		color: $green;
+	}
+}
+
+.rating {
+	padding: 0 0 100px;
+
+	&__title {
+		@include mont-600;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 40px;
+	}
+
+	&__items{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 40px 30px;
+	}
+
+	&__icon {
+		position: absolute;
+	}
+
+	&__box {
+		display: flex;
+		margin-bottom: 30px;
+	}
+
+	&__img {
+		margin-right: 30px;
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+	}
+
+	&__name {
+		@include mont-500;
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 10px;
+		margin-top: 15px;
+	}
+
+	&__position {
+		@include mont-600;
+		font-size: 18px;
+		line-height: 22px;
+		color: $orange;
+		margin-bottom: 10px;
+	}
+
+	&__work {
+		@include mont-500;
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 10px;
 	}
 }
