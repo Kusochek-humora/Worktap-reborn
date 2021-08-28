@@ -1,25 +1,23 @@
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html,
 body {
-    height: 100%;
+	height: 100%;
 }
 
 body {
-    @include mont-400;
+	@include mont-400;
 
-    color: #222222
+	color: #222222;
 }
-
-
 
 h1,
 h2,
@@ -27,71 +25,88 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    font-size: inherit;
-    font-weight: 400;
+	margin: 0;
+	font-size: inherit;
+	font-weight: 400;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
 }
-
-
 
 ul,
 ol,
 li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 button {
-    display: block;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    background: inherit;
+	display: block;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	background: inherit;
 }
 
-
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
 .content {
-    flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 .footer {
-    flex: 0 0 auto;
+	flex: 0 0 auto;
 }
 
 .container {
-    max-width: 1300px;
-    width: 100%;
-    padding: 0 10px 0;
-    margin: 0 auto;
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 10px 0;
+	margin: 0 auto;
 }
 
 .input-text {
-    cursor: pointer;
+	cursor: pointer;
 
-    &:active,
-    &:focus {
-        border-bottom: 1px solid#B0AAD0;
-        cursor:text;
-    }
+	&:active,
+	&:focus {
+		border-bottom: 1px solid#B0AAD0;
+		cursor: text;
+	}
 
-    &.successful {
-        border: 1px solid #D7FFEC;
-    }
+	&.successful {
+		border: 1px solid #d7ffec;
+	}
 
-    &.error {
-        border: 1px solid #FF4343;
-    }
+	&.error {
+		border: 1px solid #ff4343;
+	}
+}
+
+.title {
+	&.font-700 {
+		@include mont-700;
+	}
+	&.font-600 {
+		@include mont-600;
+	}
+	font-size: 36px;
+	line-height: 44px;
+}
+
+.span-green {
+	color: $green;
+}
+
+.button-last {
+	border-color: $orange;
+	color: $orange;
 }
