@@ -3,19 +3,144 @@
 
 <!--#include virtual="/templates/_head.html" -->
 
-<body class="wrapper">
+<body class="wrapper" style="background-color:  #F6FAFD;">
 
 
     <!--#include virtual="/templates/_header-joined.html" -->
     <main class="content">
 
 
-    <section class="work-progress">
-        <div class="container">
-            .work-progress
-        </div>
-    </section>
+        <section class="work-progress">
+            <div class="container">
+                <div class="work-progress-inner">
+                    <div class="work-progress-inner__steps">
 
+                        <div class="work-progress-inner__step">
+                            <span class="work-progress-inner__number"> 1 </span>
+                            <span class="work-progress-inner__title">Основные</span>
+                        </div>
+                        <div class="work-progress-inner__step">
+                            <span class="work-progress-inner__number"> 2 </span>
+                            <span class="work-progress-inner__title">Стоимость и опции</span>
+                        </div>
+                        <div class="work-progress-inner__step">
+                            <span class="work-progress-inner__number"> 3 </span>
+                            <span class="work-progress-inner__title">Описание</span>
+                        </div>
+                        <div class="work-progress-inner__step  ">
+                            <span class="work-progress-inner__number"> 4 </span>
+                            <span class="work-progress-inner__title">Требования</span>
+                        </div>
+                        <div class="work-progress-inner__step _active-step">
+                            <span class="work-progress-inner__number"> 5 </span>
+                            <span class="work-progress-inner__title">Галерея</span>
+                        </div>
+                        <div class="work-progress-inner__step">
+                            <span class="work-progress-inner__number"> 6 </span>
+                            <span class="work-progress-inner__title">Публикация</span>
+                        </div>
+                    </div>
+                    <div class="work-progress-inner__line">
+                        <div class="work-progress-inner__active ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-create">
+            <div class="container">
+                <div class="gallery-create-inner">
+                    <div class="gallery-create-inner__box">
+                        <h3 class="gallery-create-inner__title">
+                            Создайте свою галерею
+                        </h3>
+                        <p class="gallery-create-inner__text">
+                            Добавьте запоминающийся контент в свою галерею, чтобы <br> выделиться среди конкурентов.
+                        </p>
+                    </div>
+
+                    <div class="gallery-create-inner__box">
+                        <h3 class="gallery-create-inner__title">
+                            Фотографии ворка
+                        </h3>
+                        <p class="gallery-create-inner__text">
+                            Загрузите фотографии, которые описывают или имеют отношение <br> к вашему ворку. Только
+                            файлы с расширением png, jpg, jpeg.
+                        </p>
+                        <div class="gallery-create-inner__showcase">
+                            <form action="#" class="gallery-create-inner__form">
+
+                                <label class="gallery-create-inner__label">
+                                    <input type="file">
+
+                                    <div class="gallery-create-inner__template gallery-create-inner__item">
+                                        <img src="/images/add-input.svg" alt="input for add file"
+                                            class="gallery-create-inner__template-image">
+                                        <p class="gallery-create-inner__template-title">Добавить фото </p>
+                                    </div>
+                                </label>
+
+                            </form>
+                            <div class="gallery-create-inner__item">
+                                <img src="images/gallery-create-1.jpg" alt="gallery-image"
+                                    class="gallery-create-inner__item-logo">
+                            </div>
+                            <div class="gallery-create-inner__item">
+                                <img src="images/gallery-create-2.jpg" alt="gallery-image"
+                                    class="gallery-create-inner__item-logo">
+                            </div>
+
+                        </div>
+                        <label class="gallery-create-inner__link-to-video">
+                            <span class="gallery-create-inner__span">Ссылка на видео Youtube</span>
+                            <input type="text" class="gallery-create-inner__input input-text" placeholder="Placholder">
+                        </label>
+
+                    </div>
+                    <div class="gallery-create-inner__box">
+                        <h3 class="gallery-create-inner__title">
+                            Документы ворка
+                        </h3>
+                        <p class="gallery-create-inner__text">
+                            Мы рекомендуем добавлять файл документа только в том случае, <br> если он дополнительно
+                            разъясняет услугу, которую вы будете<br> предоставлять.
+                        </p>
+                        <div class="gallery-create-inner__loading-file">
+
+
+                            <label class="gallery-create-inner__label-second">
+                                <input type="file" id="file-1" multiple>
+                                <img src="images/gallery-input-file2.svg" alt="input image/logo"
+                                    class="gallery-create-inner__download-image">
+                                <p class="gallery-create-inner__download-text">
+                                    Перетащите файл сюда или нажмите
+                                </p>
+                                <span class="gallery-create-inner__download-span">загрузить</span>
+                            </label>
+                            <span class="gallery-create-inner__helper">
+                                Загружайте только файлы doc / pdf и не более 500 КБ
+                            </span>
+
+                            <ul class="gallery-create-inner__upload-list">
+                                <li class="gallery-create-inner__upload-item">
+                                    <span class="gallery-create-inner__upload-name-file">
+                                        food.doc
+                                    </span>
+                                    <span class="gallery-create-inner__upload-done"></span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gallery-create-inner__buttons">
+                        <button class="gallery-create-inner__prev">Назад</button>
+                        <button class="gallery-create-inner__next">Вперед</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <!--#include virtual="/templates/_footer.html" -->
