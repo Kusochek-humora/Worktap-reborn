@@ -83,7 +83,8 @@ export const buildJs = (done) => {
 export const buildCss = (done) => {
 	gulp.src([
 			'node_modules/normalize.css/normalize.css',
-			'node_modules/magnific-popup/dist/magnific-popup.css'
+			'node_modules/magnific-popup/dist/magnific-popup.css',
+			'node_modules/slick-carousel/slick/slick.css',
 		
 		])
 		.pipe(prefixer())

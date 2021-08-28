@@ -77,23 +77,75 @@ button {
     padding: 0 10px 0;
     margin: 0 auto;
 }
-.input__lable{
 
+.input__lable {}
+
+// &:hover {
+//     .form-all__checkbox-template {
+//         background-color: #e7ffde;
+//     }
+// }
+
+// &:active{
+//     .form-all__checkbox-template {
+//         background-color: #1DBF73 !important;
+//     }
+
+// }
+label {
+    cursor: pointer;
 }
- .input-checkbox{
 
- }
-.input-span{
+.input-checkbox {
+    position: relative;
+    margin-right: 32px;
+    z-index: 1;
+
+    appearance: none;
+
+    &:hover::after {
+
+        background-color: #e7ffde;
+
+    }
+
+    &:checked::after {
+
+        background-color: #1DBF73 !important;
+
+    }
+
+    &::after {
+        display: block;
+        z-index: 2;
+        position: absolute;
+        top: -3px;
+        left: 0;
+        content: "";
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        transition: 0.3s all;
+        border: 2px solid #B0AAD0;
+    }
+}
+
+
+.input-span {
     @include mont-500;
-    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 22px;
     display: block;
+    margin-bottom: 18px;
 }
+
 .input-text {
+    display: block;
     cursor: pointer;
     width: 100%;
     padding-left: 20px;
     padding-bottom: 9px;
-   
+
     @include mont-500;
     font-size: 16px;
     line-height: 20px;
@@ -109,10 +161,11 @@ button {
         line-height: 20px;
         color: #B0AAD0;
     }
+
     &:active,
     &:focus {
         border-bottom: 1px solid#B0AAD0;
-        cursor:text;
+        cursor: text;
     }
 
     &.successful {
@@ -151,3 +204,13 @@ button {
     background: #1DBF73;
     color: #F6FAFD;
 }
+
+// .slick-slide,
+// .slick-current,
+// .slick-active,
+// .slick-list,
+// .draggable,
+// .slick-track {
+//     width: 100% !important;
+//     max-width: 960px !important;
+// }

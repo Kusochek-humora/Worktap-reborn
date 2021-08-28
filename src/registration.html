@@ -12,55 +12,79 @@
     </header>
 
     <main class="content">
-        <section class="login">
+        <section class="reg">
 
-            
-            <div class="login__inner">
-                <form action="#" class="form-login form-all">
-                    <div class="login__logo form-all__logo">
+
+            <div class="reg__inner">
+                <form action="#" class="form-reg form-all">
+                    <div class="er__logo form-all__logo">
                         <img class="form-all__image" src="images/header__logo.svg" alt="header__logo">
                     </div>
                     <h2 class="form-all__subtitle">
-                        Добро пожаловать!
+                        Давайте создадим Вам аккаунт
                     </h2>
                     <h1 class="form-all__title">
-                        Войдите в свой аккаунт
+                        Заполните все поля
                     </h1>
+                    <label class="form-all__label">
+                        <div class="forml-all__span input-span">
+                            Ваше имя
+                        </div>
+                        <input type="text" class="input-text" placeholder="Имя">
+                    </label>
+                    <label class="form-all__label">
+                        <div class="forml-all__span input-span">
+                            Ваша фамилия
+                        </div>
+                        <input type="text" class="input-text" placeholder="Фамилия">
+                    </label>
                     <label class="form-all__label">
                         <div class="forml-all__span input-span">
                             E-mail
                         </div>
-                        <input type="email" class="input-text" placeholder="Placeholder">
+                        <input type="email" class="input-text" placeholder="     E-mail">
+                    </label>
+                    <label class="form-all__label">
+                        <div class="forml-all__span input-span">
+                            Телефон номер
+                        </div>
+                        <input type="tel" class="input-text" placeholder="Телефон">
                     </label>
                     <label class="form-all__label">
                         <div class="forml-all__span input-span">
                             Пароль
                         </div>
-                        <input type="password" class="input-text" placeholder="Placeholder">
+                        <input type="password" class="input-text" placeholder="Пароль">
+                    </label>
+                    <label class="form-all__label">
+                        <div class="forml-all__span input-span">
+                            Повторите пароль
+                        </div>
+                        <input type="password" class="input-text" placeholder="Пароль">
                     </label>
                     <div class="form-all__affirmative">
-                        <label class="form-all__checkbox-label ">
-                            <input type="checkbox" class="input-checkbox">
+                        <label class="form-all__checkbox-label reg-checkbox-label">
+                            <input type="radio" name="reg-role" value="developer" class="input-checkbox">
                             <div class="form-all__checkbox-template"></div>
-                            <span class="form-all__checkbox-span input-span"> Запомнить меня</span>
+                            <span class="form-all__checkbox-span input-span"> Я исполнитель</span>
                         </label>
-                        <a href="#" class="form-all__forgot">
-                            Забыли пароль?
-                        </a>
+                        <label class="form-all__checkbox-label ">
+                            <input type="radio" name="reg-role" value="customer" class="input-checkbox">
+                            <div class="form-all__checkbox-template"></div>
+                            <span class="form-all__checkbox-span input-span"> Я заказчик</span>
+                        </label>
                     </div>
                     <button class="form-all__button" type="submit">
-                        Войти
+                        Зарегестрироваться
                     </button>
-                    <button class="form-all__button-google" type="submit">
-                        <span class="form-all__button-google-item">Или войдите с помощю Google</span>
-                    </button>
-                    <p class="form-all__text">
-                        У Вас все еще нет аккауна? <a href="#" class="form-all__text-link">Зарегистрируйтесь
-                            бесплатно!</a>
+
+                    <p class="form-all__text reg-text">
+                        У Вас есть аккаунт? <a href="#" class="form-all__text-link">Войдите
+                        </a>
                     </p>
                 </form>
                 <div class="form-all__slider-wrapper">
-                    <div class="login__slider form-all__slider">
+                    <div class="reg__slider form-all__slider">
                         <div class="form-all__slider-item">
                             <img class="form-all__slider-image" src="images/popup-slider-item1.png" alt="slider-item1">
                             <div class="form-all__slider-box">
