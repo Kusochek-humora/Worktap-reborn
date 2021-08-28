@@ -3,7 +3,17 @@
  var progressStepActive = document.querySelector('._active-step');
  var progressCounter = 0;
  var progressComplete = false;
+ let login = document.querySelector(".btn-login");
+ let reg = document.querySelector(".btn-registration");
+ $(".btn-login, .btn-registration").magnificPopup({
+     type: 'inline',
+     closeOnBgClick: true
 
+ });
+ //  $(".btn-login, .btn-registration").on('click', '.popup-modal-dismiss', function (e) {
+ //      e.preventDefault();
+ //      $.magnificPopup.close();
+ //  });
  progressStep.forEach(
      (e) => {
          progressCounter = progressCounter + 20;
@@ -60,7 +70,3 @@
 
 
  }, false);
-
- function createFile() {
-
- }

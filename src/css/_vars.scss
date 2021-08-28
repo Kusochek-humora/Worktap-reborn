@@ -1,7 +1,7 @@
 $green:rgba(29, 191, 115, 1);
 $orange:rgba(251, 164, 87, 1);
 $white:#fff;
-
+$black-m:#000;
 @mixin input-type-file-hide {
     input {
         visibility: hidden;
