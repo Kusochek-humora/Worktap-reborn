@@ -5,15 +5,54 @@
 
 <body class="wrapper">
 
-
+    <header style="display: none;"></header>
 
     <main class="content">
-        <div class="container">
-
-                <!--#include virtual="/templates/_login.html" -->
-
-        </div>
-
+        <section class="login">
+            <div class="container">
+                <div class="login__logo form-all__logo">
+                    <img class="form-all__image" src="images/header__logo.svg" alt="header__logo">
+                </div>
+                <div class="login__inner">
+                    <form action="#" class="form-login form-all">
+                        <h2 class="form-all__subtitle">
+                            Добро пожаловать!
+                        </h2>
+                        <h1 class="form-all__title">
+                            Войдите в свой аккаунт
+                        </h1>
+                        <label class="form-all__label">
+                            <div class="forml-all__span input-span">
+                                E-mail
+                            </div>
+                            <input type="email" class="input-text" placeholder="Placeholder">
+                        </label>
+                        <label class="form-all__label">
+                            <div class="forml-all__span input-span">
+                                Пароль
+                            </div>
+                            <input type="password" class="input-text" placeholder="Placeholder">
+                        </label>
+                        <div class="form-all__affirmative">
+                            <label  class="form-all__checkbox-label ">
+                                <input type="checkbox" class="input-checkbox">
+                                <div class="form-all__checkbox-template"></div>
+                                <span class="form-all__checkbox-span input-span"> Запомнить меня</span>
+                            </label>
+                            <a href="#" class="form-all__forgot">
+                                Забыли пароль?
+                            </a>
+                        </div>
+                    </form>
+                    <div class="login__slider">
+                        <div class="login__slider-item"></div>
+                        <div class="login__slider-item"></div>
+                        <div class="login__slider-item"></div>
+                        <div class="login__slider-item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!--#include virtual="/templates/_footer.html" -->
 

@@ -266,7 +266,7 @@
 
         &__loading-file,
         &__showcase {
-            @include input-type-file-hide;
+            @include input-hide;
         }
 
         &__showcase {
@@ -344,9 +344,7 @@
         &__span {
             font-size: 18px;
             line-height: 22px;
-            @include mont-500;
-            margin-bottom: 18px;
-            display: block;
+
         }
 
         &__input {}
@@ -390,6 +388,68 @@
             object-fit: cover
         }
     }
+}
+
+.login {}
+
+.form-login {}
+
+.form-all {
+    max-width: 510px;
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        @include mont-400;
+        color: #2D3748;
+
+    }
+
+    &__logo {
+        margin-top: 20px;
+    }
+
+    &__title {
+        margin-bottom: 58px;
+        font-size: 30px;
+        line-height: 37px;
+        @include mont-700;
+        color: #1A202C;
+    }
+
+    &__affirmative {}
+
+    &__checkbox-label {
+        display: inline-flex;
+
+
+   
+       input:active{
+            .form-all__checkbox-template {
+                background-color:  #1DBF73 !important;
+            }
+
+        }
+
+        &:hover {
+            .form-all__checkbox-template {
+                background-color: #e7ffde;
+            }
+        }
+    }
+
+
+
+    &__checkbox-template {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        transition: 0.3s all;
+        border: 2px solid #B0AAD0;
+
+
+    }
+
 }
 
 @import "reset";

@@ -77,7 +77,17 @@ button {
     padding: 0 10px 0;
     margin: 0 auto;
 }
+.input__lable{
 
+}
+ .input-checkbox{
+
+ }
+.input-span{
+    @include mont-500;
+    margin-bottom: 18px;
+    display: block;
+}
 .input-text {
     cursor: pointer;
     width: 100%;
