@@ -5,13 +5,15 @@
  var progressComplete = false;
  let login = document.querySelector(".btn-login");
  let reg = document.querySelector(".btn-registration");
- $(".btn-login btn-registration").magnificPopup({
-     type: 'inline'
+ $(".btn-login, .btn-registration").magnificPopup({
+     type: 'inline',
+     closeOnBgClick: true
+
  });
- $(login, reg).on('click', '.popup-modal-dismiss', function (e) {
-     e.preventDefault();
-     $.magnificPopup.close();
- });
+ //  $(".btn-login, .btn-registration").on('click', '.popup-modal-dismiss', function (e) {
+ //      e.preventDefault();
+ //      $.magnificPopup.close();
+ //  });
  progressStep.forEach(
      (e) => {
          progressCounter = progressCounter + 20;
