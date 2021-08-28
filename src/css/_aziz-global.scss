@@ -31,3 +31,26 @@
     color: #fff;
   }
 }
+
+.span-green {
+  color: $green;
+}
+
+.button-last {
+  border-color: $orange;
+  color: $orange;
+}
+
+
+.title {
+  font-size: 36px;
+  line-height: 44px;
+
+  &.font-700{
+    @include mont-700;
+  }
+
+  &.font-600{
+    @include mont-700;
+  }
+}
