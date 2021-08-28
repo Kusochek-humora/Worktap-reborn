@@ -424,14 +424,7 @@
 		margin-bottom: 50px;
 	}
 
-	&__item {
-		width: 420px;
-		height: 270px;
-		padding: 20px;
-		border: 1px solid #f2f0fe;
-		box-sizing: border-box;
-		border-radius: 20px;
-	}
+	
 
 	&__box {
 		display: flex;
@@ -486,7 +479,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #F2F0FE;
+		background-color: #f2f0fe;
 	}
 
 	&__link {
@@ -495,4 +488,17 @@
 		line-height: 22px;
 		color: $green;
 	}
+}
+
+.rating {
+	padding: 0 0 100px;
+
+	&__title {
+		@include mont-600;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 40px;
+	}
+
+
 }
