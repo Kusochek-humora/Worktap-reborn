@@ -349,26 +349,7 @@
             display: block;
         }
 
-        &__input {
-            padding-left: 20px;
-            padding-bottom: 9px;
-            width: 100%;
-            @include mont-500;
-            font-size: 16px;
-            line-height: 20px;
-            background-color: transparent;
-            border: 0;
-            outline: none;
-            transition: 0.3s all;
-            border-bottom: 1px solid #F2F0FE;
-
-            &::placeholder {
-                @include mont-500;
-                font-size: 16px;
-                line-height: 20px;
-                color: #B0AAD0;
-            }
-        }
+        &__input {}
 
         &__link-to-video {
             display: block;
