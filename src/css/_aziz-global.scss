@@ -1,9 +1,33 @@
-.item{
+.item {
   width: 420px;
   height: 270px;
   padding: 20px;
   border: 1px solid #f2f0fe;
-  box-sizing: border-box;
   border-radius: 20px;
 }
 
+.item-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f0fe;
+  border-radius: 20px;
+}
+
+.button {
+  width: 380px;
+  height: 40px;
+  border: 1px solid #1dbf73;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: $green;
+  @include mont-500;
+  font-size: 14px;
+  line-height: 17px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $green;
+    color: #fff;
+  }
+}
