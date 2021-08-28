@@ -1,11 +1,16 @@
 .header {
-	background-color: #f7f6ff;
+	background-color: transparent;
+
 	&__inner {
 		padding: 50px 0 60px;
 		display: flex;
-		justify-content: space-around;
+		justify-content: flex-start;
 		align-items: center;
 		position: relative;
+	}
+
+	&-logo {
+		margin-right: 60px;
 	}
 }
 
@@ -18,13 +23,14 @@
 		color: #222;
 	}
 
-	&__list-item + .menu__list-item {
+	&__list-item+.menu__list-item {
 		margin-left: 40px;
 	}
 }
 
 .header-box {
 	display: flex;
+
 	&__registration {
 		margin-right: 30px;
 		padding: 10px 30px;
@@ -76,11 +82,11 @@
 		display: flex;
 	}
 
-	&__list-item + .footer-top__list-item {
+	&__list-item+.footer-top__list-item {
 		margin-top: 10px;
 	}
 
-	&__list-item-social + .footer-top__list-item-social {
+	&__list-item-social+.footer-top__list-item-social {
 		margin-left: 30px;
 	}
 
@@ -110,6 +116,7 @@
 	padding: 130px 0 170px;
 	// background-color: #E5E5E5;
 	position: relative;
+
 	&__img {
 		position: absolute;
 
@@ -149,6 +156,7 @@
 		line-height: 44px;
 		margin-bottom: 60px;
 	}
+
 	.span-green {
 		color: $green;
 	}
@@ -172,6 +180,7 @@
 		border-radius: 50px;
 		border: 0;
 		padding-right: 154px;
+
 		&:focus {
 			outline: none;
 			border-radius: 50px;
@@ -221,7 +230,7 @@
 		color: $orange;
 	}
 
-	&__box-btn + .promo__box-btn {
+	&__box-btn+.promo__box-btn {
 		margin-left: 60px;
 	}
 
@@ -232,25 +241,25 @@
 		margin-bottom: 35px;
 	}
 
-	&__icon{
+	&__icon {
 		margin: 0 auto;
 	}
 }
 
-.catalog{
+.catalog {
 
-	&__top{
+	&__top {
 		margin-bottom: 40px;
 	}
 
-	&__item{
+	&__item {
 		display: flex;
 		justify-content: space-between;
 	}
 
-	&__box{
+	&__box {
 		display: flex;
 	}
 
-	
+
 }

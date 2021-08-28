@@ -15,9 +15,8 @@ body {
 
 body {
     @include mont-400;
-    font-size: inherit;
+
     color: #222222
-    
 }
 
 
@@ -54,6 +53,7 @@ button {
     border: none;
     padding: 0;
     cursor: pointer;
+    background: inherit;
 }
 
 
@@ -76,4 +76,22 @@ button {
     width: 100%;
     padding: 0 10px 0;
     margin: 0 auto;
+}
+
+.input-text {
+    cursor: pointer;
+
+    &:active,
+    &:focus {
+        border-bottom: 1px solid#B0AAD0;
+        cursor:text;
+    }
+
+    &.successful {
+        border: 1px solid #D7FFEC;
+    }
+
+    &.error {
+        border: 1px solid #FF4343;
+    }
 }
