@@ -100,21 +100,26 @@
  //  sliders.forEach((slider) => {
 
  //  })
-
+ let arrFormShowTitle = [formShowTitle.innerHTML, "Скрыть"]
  click(formShow, function () {
      formShowIco.classList.toggle('_icon-active'),
          formOutter.classList.toggle('_outter-active');
-     if (formShowTitle.innerHTML === "Войти") {
+
+     if (formShowTitle.innerHTML === arrFormShowTitle[0]) {
+
          formShowTitle.innerHTML = "Скрыть";
          formAll.style.transform = TRANSLATEFORMTOP;
      } else {
-         formShowTitle.innerHTML = "Войти";
+         formShowTitle.innerHTML = arrFormShowTitle[0];
          formAll.style.transform = TRANSLATEFORMBOT;
      }
+
+
+
  });
 
  click(formOutter, function () {
-     formShowTitle.innerHTML = "Войти";
+  formShowTitle.innerHTML = arrFormShowTitle[0];
      formAll.style.transform = TRANSLATEFORMBOT;
      formShowIco.classList.remove('_icon-active');
      formOutter.classList.remove('_outter-active');
