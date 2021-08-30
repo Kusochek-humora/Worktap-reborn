@@ -165,45 +165,19 @@
 	}
 
 	&__form {
-		display: flex;
-		justify-content: center;
-		position: relative;
 		max-width: 645px;
-		width: 100%;
-		height: 60px;
 		margin: 0 auto 50px;
 	}
 
 	&__input {
-		padding-left: 20px;
 		max-width: 645px;
-		width: 100%;
-		height: 60px;
-		background-color: #f2f0fe;
-		border-radius: 50px;
-		border: 0;
-		padding-right: 154px;
 
-		&:focus {
-			outline: none;
-			border-radius: 50px;
-			border: 3px solid $green;
-		}
+		
 	}
 
-	&__btn {
-		position: absolute;
-		right: 4px;
-		top: 3px;
-		max-width: 154px;
-		width: 100%;
-		height: 54px;
-		background-color: #fba457;
-		border: 1px solid #f2f0fe;
-		box-sizing: border-box;
-		border-radius: 50px;
-		color: #fff;
-	}
+	
+
+
 
 	&__box-one,
 	&__box-two {
@@ -219,18 +193,7 @@
 		margin-bottom: 50px;
 	}
 
-	&__box-btn {
-		background-color: transparent;
-		padding: 10px 20px;
-		font-size: 14px;
-		line-height: 17px;
-		border: 1px solid #f2f0fe;
-		border-radius: 50px;
-	}
-
-	&__box-btn + .promo__box-btn {
-		margin-left: 60px;
-	}
+	
 
 	&__text {
 		font-size: 24px;
@@ -357,6 +320,9 @@
 	&__input {
 		max-width: 532px;
 	}
+
+	
+
 
 	&__text-after {
 		@include mont-500;
