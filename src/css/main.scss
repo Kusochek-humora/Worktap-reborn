@@ -266,7 +266,7 @@
 
         &__loading-file,
         &__showcase {
-            @include input-type-file-hide;
+            @include input-hide;
         }
 
         &__showcase {
@@ -342,33 +342,11 @@
 
 
         &__span {
-            font-size: 18px;
-            line-height: 22px;
-            @include mont-500;
+
             margin-bottom: 18px;
-            display: block;
         }
 
-        &__input {
-            padding-left: 20px;
-            padding-bottom: 9px;
-            width: 100%;
-            @include mont-500;
-            font-size: 16px;
-            line-height: 20px;
-            background-color: transparent;
-            border: 0;
-            outline: none;
-            transition: 0.3s all;
-            border-bottom: 1px solid #F2F0FE;
-
-            &::placeholder {
-                @include mont-500;
-                font-size: 16px;
-                line-height: 20px;
-                color: #B0AAD0;
-            }
-        }
+        &__input {}
 
         &__link-to-video {
             display: block;
@@ -409,6 +387,250 @@
             object-fit: cover
         }
     }
+}
+
+.login,
+.reg {
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-text{
+        text-align: center;
+        margin-top: 20px;
+    }
+    &-checkbox-label{
+        &:first-child{
+            margin-right: 20px;
+        }
+    }
+}
+
+.form-login {}
+
+.form-all {
+    min-width: 510px;
+
+    margin-right: 150px;
+
+
+    &__logo {
+        position: absolute;
+        top: 20px;
+
+    }
+
+    &__slider {
+        position: relative;
+        width: 960px !important;
+
+        &-wrapper {
+
+            .slick-dots {
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                bottom: 60px;
+                display: flex;
+                align-items: center;
+
+                li.slick-active {
+                    opacity: 1;
+                    width: 32px;
+                    height: 32px;
+                }
+
+                li {
+                    transition: 0.3s all;
+                    margin-right: 24px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    border-radius: 50%;
+                    opacity: 0.5;
+                    width: 16px;
+                    height: 16px;
+                    background-color: $orange;
+                }
+
+                button {
+                    font-size: 0;
+                    line-height: 0px;
+                }
+            }
+        }
+
+
+        &-item {
+            max-width: max-content !important;
+            width: 960px !important;
+            height: 1080px;
+            display: block !important;
+            position: relative;
+            z-index: 1;
+            background-image: url(../images/popup-slider-item1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &-box {
+            left: 60px;
+            padding: 20px;
+            position: absolute;
+            max-width: 840px;
+            width: 100%;
+            min-height: 103px;
+            bottom: 130px;
+            background: #FFFFFF;
+            box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+            z-index: 2;
+        }
+
+        &-image {
+            display: block;
+            z-index: 1;
+
+
+            object-fit: cover;
+        }
+
+        &-title {
+            font-size: 24px;
+            line-height: 29px;
+            @include mont-600;
+            color: $orange;
+            margin-bottom: 10px;
+        }
+
+        &-text {
+            font-size: 20px;
+            line-height: 24px;
+            @include mont-400;
+            color: $black-m;
+        }
+    }
+
+
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        @include mont-400;
+        color: #2D3748;
+        display: block;
+    }
+
+
+    &__text {
+        @include mont-500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #616161;
+
+        &-link {
+            color: $orange;
+        }
+    }
+
+    &__title {
+        margin-top: auto;
+        display: block;
+        margin-bottom: 58px;
+        font-size: 30px;
+        line-height: 37px;
+        @include mont-700;
+        color: #1A202C;
+    }
+
+    &__button-google,
+    &__button {
+        border-radius: 100px;
+        font-size: 18px;
+        line-height: 22px;
+        height: 50px;
+        width: 100%;
+        @include mont-700;
+        color: $white;
+    }
+
+    &__button-google {
+        margin-top: 20px;
+        background: #2D3748;
+        margin-bottom: 60px;
+    }
+
+    &__button-google-item {
+
+        position: relative;
+        padding-left: 33px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../images/google-button.svg);
+            left: 0;
+            top: -5px;
+            height: 21px;
+            width: 21px;
+        }
+    }
+
+    &__button {
+        background: $green;
+    }
+
+    &__label {
+        margin-bottom: 40px;
+        display: block;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__affirmative {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__forgot {
+        font-size: 18px;
+        line-height: 22px;
+        color: $orange;
+        @include mont-400;
+        margin-left: auto;
+    }
+
+    &__checkbox-span {
+        z-index: 1;
+        margin-bottom: 0 !important;
+    }
+
+    &__checkbox-label {
+        display: flex;
+        position: relative;
+        z-index: 3;
+
+    }
+
+
+
+    // &__checkbox-template {
+    //     width: 24px;
+    //     height: 24px;
+    //     border-radius: 50%;
+    //     transition: 0.3s all;
+    //     border: 2px solid #B0AAD0;
+
+
+    // }
+
 }
 
 @import "reset";

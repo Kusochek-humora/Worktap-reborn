@@ -2,14 +2,14 @@ $green:rgba(29, 191, 115, 1);
 $orange:rgba(251, 164, 87, 1);
 $white:#fff;
 $black-m:#000;
-@mixin input-type-file-hide {
-    input {
+@mixin input-hide {
+   input{
         visibility: hidden;
         display: none;
         width: 0;
         height: 0;
         opacity: 0;
-    }
+   }
 }
 
 @mixin flex-center {

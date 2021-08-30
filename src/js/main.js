@@ -5,11 +5,23 @@
  var progressComplete = false;
  let login = document.querySelector(".btn-login");
  let reg = document.querySelector(".btn-registration");
- $(".btn-login, .btn-registration").magnificPopup({
-     type: 'inline',
-     closeOnBgClick: true
-
+ $('.login__slider , .reg__slider').slick({
+     //  appendDots: '.appendDots',
+     arrows: false,
+     dots: true,
+     infinite: true,
+     speed: 500,
+     autoplay: true,
+     fade: true,
+     cssEase: 'linear'
  });
+
+ //  $('.login__slider').slick('reinit');
+ //  $(".btn-login, .btn-registration").magnificPopup({
+ //      type: 'inline',
+ //      closeOnBgClick: true
+
+ //  });
  //  $(".btn-login, .btn-registration").on('click', '.popup-modal-dismiss', function (e) {
  //      e.preventDefault();
  //      $.magnificPopup.close();
