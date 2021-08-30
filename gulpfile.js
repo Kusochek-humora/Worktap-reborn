@@ -73,7 +73,18 @@ export const buildJs = (done) => {
 		.pipe(concat('aziz.min.js'))
 		.pipe(gulp.dest('dist/js'))
 		.pipe(sync.stream());
-
+	gulp.src('src/js/create-work.js')
+		.pipe(plumber())
+		.pipe(rigger())
+		.pipe(babel({
+			presets: ['@babel/preset-env']
+		}))
+		.pipe(sourcemaps.init())
+		.pipe(uglify())
+		.pipe(sourcemaps.write())
+		.pipe(concat('create-work.min.js'))
+		.pipe(gulp.dest('dist/js'))
+		.pipe(sync.stream());
 	done();
 };
 
@@ -85,7 +96,7 @@ export const buildCss = (done) => {
 			'node_modules/normalize.css/normalize.css',
 			'node_modules/magnific-popup/dist/magnific-popup.css',
 			'node_modules/slick-carousel/slick/slick.css',
-		
+
 		])
 		.pipe(prefixer())
 		.pipe(csso())
@@ -190,7 +201,6 @@ export const buildAll = gulp.series(
 
 export const server = () => {
 	sync.init({
-		ui: false,
 		notify: false,
 		server: {
 			baseDir: 'dist'

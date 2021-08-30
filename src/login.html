@@ -5,20 +5,28 @@
 
 <body class="wrapper">
 
-    <header style="display: none;">
-        <div class="login__logo form-all__logo">
-            <img class="form-all__image" src="images/header__logo.svg" alt="header__logo">
+    <header class="header__form">
+        <div class="header__form-logo">
+            <a href="" class="header__form-link">
+                <img class="header__form-image" src="images/header__logo.svg" alt="header__logo"></a>
+        </div>
+        <div class="header__burger bahandi">
+            <div class="bahandi-item"></div>
+            <div class="bahandi-item"></div>
+            <div class="bahandi-item"></div>
         </div>
     </header>
 
     <main class="content">
         <section class="login">
 
-            
+
             <div class="login__inner">
-                <form action="#" class="form-login form-all">
-                    <div class="login__logo form-all__logo">
-                        <img class="form-all__image" src="images/header__logo.svg" alt="header__logo">
+
+                <form action="#" class="form-login form-all" id="form1">
+                    <div class="form-logo">
+                        <a class="form-logo__link" href="#"> <img class="form-logo__image" src="images/header__logo.svg"
+                                alt="form__logo"></a>
                     </div>
                     <h2 class="form-all__subtitle">
                         Добро пожаловать!
@@ -27,13 +35,13 @@
                         Войдите в свой аккаунт
                     </h1>
                     <label class="form-all__label">
-                        <div class="forml-all__span input-span">
+                        <div class="form-all__span input-span">
                             E-mail
                         </div>
                         <input type="email" class="input-text" placeholder="Placeholder">
                     </label>
                     <label class="form-all__label">
-                        <div class="forml-all__span input-span">
+                        <div class="form-all__span input-span">
                             Пароль
                         </div>
                         <input type="password" class="input-text" placeholder="Placeholder">
@@ -60,7 +68,7 @@
                     </p>
                 </form>
                 <div class="form-all__slider-wrapper">
-                    <div class="login__slider form-all__slider">
+                    <div class="login__slider form-all__slider" >
                         <div class="form-all__slider-item">
                             <img class="form-all__slider-image" src="images/popup-slider-item1.png" alt="slider-item1">
                             <div class="form-all__slider-box">
@@ -101,6 +109,13 @@
                         <li class="form-all__slider-dots-item"></li>
                     </ul> -->
                 </div>
+                <button class="form-outter">
+
+                </button>
+                <button class="form-show">
+                    <img src="images/form-show.svg" alt="form-show icon" class="form-show__ico">
+                    <span class="form-show__title">Войти</span>
+                </button>
             </div>
         </section>
     </main>

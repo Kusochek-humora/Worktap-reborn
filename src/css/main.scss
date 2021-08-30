@@ -51,6 +51,41 @@
     }
 }
 
+.header__form {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px 0;
+    position: fixed;
+    z-index: 3;
+    background-color: $white;
+    width: 100%;
+    height: 50px;
+
+    &-logo {}
+
+    &-image {
+        width: 100px;
+        height: 20px;
+        object-fit: cover;
+    }
+}
+
+.bahandi {
+
+
+    &-item {
+        background: #656084;
+        height: 2px;
+        width: 20px;
+        margin-bottom: 4px;
+
+        &:last-child {
+            margin-bottom: 5px;
+        }
+    }
+}
+
 .work-progress {
     margin-bottom: 112px;
 
@@ -393,40 +428,128 @@
 .reg {
     &__inner {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
     }
-    &-text{
+
+    &-text {
         text-align: center;
         margin-top: 20px;
     }
-    &-checkbox-label{
-        &:first-child{
+
+    &-checkbox-label {
+        &:first-child {
             margin-right: 20px;
         }
     }
 }
 
-.form-login {}
+.reg {
+    .form-all__slider-item {
+   
+    }
+
+    .reg__inner {
+        height: 100vh;
+    }
+
+    .form-logo {
+        display: none;
+        top: -70px;
+
+        z-index: 3;
+
+        &__link {}
+
+        &__image {}
+    }
+
+    .form-all__label {
+        margin-bottom: 30px;
+    }
+}
+
+.form-outter {
+    background: #000000;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    transition: 0.4s all;
+    position: absolute;
+    z-index: 1;
+
+    &._outter-active {
+        opacity: 0.5;
+        visibility: visible;
+    }
+}
+
+.form-show {
+    display: none;
+    min-width: 320px;
+    height: 56px;
+    width: 100%;
+    background: #F6FAFD;
+    border-radius: 20px 20px 0px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-size: 16px;
+        line-height: 20px;
+        @include mont-600;
+        color: $green;
+        text-align: center;
+    }
+
+    &__ico {
+        transition: 0.4s all;
+        transform: rotateX(0);
+        perspective: 100px;
+        margin-bottom: 4px;
+
+        &._icon-active {
+            transform: rotateX(180deg);
+        }
+    }
+}
+
+.login {
+    .form-logo {
+        position: fixed;
+        top: 20px;
+
+        z-index: 3;
+
+        &__link {}
+
+        &__image {}
+    }
+}
+
+.form-logo {
+    position: fixed;
+    top: 20px;
+
+    z-index: 3;
+
+    &__link {}
+
+    &__image {}
+}
 
 .form-all {
     min-width: 510px;
-
+    transition: 0.4s all;
     margin-right: 150px;
-
-
-    &__logo {
-        position: absolute;
-        top: 20px;
-
-    }
 
     &__slider {
         position: relative;
-        width: 960px !important;
+        width: 960px;
 
         &-wrapper {
-
             .slick-dots {
                 left: 50%;
                 transform: translateX(-50%);
@@ -463,17 +586,12 @@
             }
         }
 
-
         &-item {
-            max-width: max-content !important;
-            width: 960px !important;
+            width: auto;
             height: 1080px;
-            display: block !important;
+            display: block;
             position: relative;
             z-index: 1;
-            background-image: url(../images/popup-slider-item1.png);
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         &-box {
@@ -493,9 +611,8 @@
         &-image {
             display: block;
             z-index: 1;
-
-
-            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
 
         &-title {
@@ -514,8 +631,6 @@
         }
     }
 
-
-
     &__subtitle {
         font-size: 16px;
         line-height: 20px;
@@ -523,7 +638,6 @@
         color: #2D3748;
         display: block;
     }
-
 
     &__text {
         @include mont-500;
@@ -610,6 +724,7 @@
     &__checkbox-span {
         z-index: 1;
         margin-bottom: 0 !important;
+        display: block;
     }
 
     &__checkbox-label {
