@@ -11,6 +11,8 @@ html {
 html,
 body {
     height: 100%;
+
+   
 }
 
 body {
@@ -78,7 +80,10 @@ button {
     margin: 0 auto;
 }
 
-.input__lable {}
+.bahandi {}
+
+
+// .input__lable {}
 
 // &:hover {
 //     .form-all__checkbox-template {
@@ -100,33 +105,40 @@ label {
     position: relative;
     margin-right: 32px;
     z-index: 1;
-
+    border: 0;
+    outline: 0;
     appearance: none;
+    margin-right: 8px;
+    top: -2px;
 
     &:hover::after {
 
         background-color: #e7ffde;
-
+        // border-color:#e7ffde;
     }
 
     &:checked::after {
-
-        background-color: #1DBF73 !important;
+        border-color: $green;
+        background-color: $green;
 
     }
 
     &::after {
         display: block;
         z-index: 2;
-        position: absolute;
-        top: -3px;
-        left: 0;
+
+
         content: "";
         width: 24px;
         height: 24px;
         border-radius: 50%;
         transition: 0.3s all;
         border: 2px solid #B0AAD0;
+
+        @media(max-width:1024px) {
+            width: 17px;
+            height: 17px;
+        }
     }
 }
 
@@ -155,11 +167,22 @@ label {
     transition: 0.3s all;
     border-bottom: 1px solid #F2F0FE;
 
+    @media(max-width:1024px) {
+        padding-left: 5px;
+        padding-bottom: 12px;
+    }
+
     &::placeholder {
         @include mont-500;
         font-size: 16px;
         line-height: 20px;
         color: #B0AAD0;
+
+        @media(max-width:1024px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
     }
 
     &:active,
