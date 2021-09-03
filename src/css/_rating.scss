@@ -1,0 +1,185 @@
+.rating {
+  padding: 0 0 100px;
+
+  &__title {
+    @include mont-600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 30px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 150px;
+    left: 120px;
+  }
+
+  &__box {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    margin-right: 30px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  &__name {
+    @include mont-500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  &__position {
+    @include mont-600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $orange;
+    margin-bottom: 10px;
+  }
+
+  &__work {
+    @include mont-500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    @include mont-600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $green;
+  }
+}
+
+@media (max-width: 1300px) {
+  .rating {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .item {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .rating {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__link {
+      height: 70px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+    }
+
+    .item-last {
+      height: 70px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .rating {
+    // .item {
+    //   height: 100%;
+    // }
+
+    .button {
+      width: 100%;
+    }
+
+    &__box {
+      justify-content: center;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__img {
+      margin-right: 20px;
+      width: 90px;
+      height: 90px;
+    }
+
+    &__icon {
+      position: absolute;
+      top: 91px;
+      left: 118px;
+    }
+
+    &__name {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__position {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__work {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .rating {
+    &__link {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .rating {
+    &__box {
+      display: block;
+    }
+
+    &__img {
+      margin: 0 auto;
+    }
+
+    &__info {
+      text-align: center;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+
+    .item {
+      height: 315px;
+    }
+
+    .item-last {
+      height: 70px;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.explanation {
+	background-image: url("../images/explanation-img.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+
+	&__title {
+		@include mont-600;
+		font-size: 24px;
+		line-height: 29px;
+		color: #f6fafd;
+		padding: 50px 0 45px;
+	}
+	
+	&__info {
+		display: flex;
+		align-items: center;
+		border-radius: 20px;
+		font-size: 14px;
+		line-height: 17px;
+		width: 535px;
+		height: 90px;
+		background-color: #fff;
+		padding-left: 100px;
+		
+		
+		& + .explanation__info {
+			margin-top: 30px;
+		}
+	}
+
+	&__cart {
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-image: url('../images/explanation-credit-card.svg');
+			left: 20px;
+			top: 20px;
+		}
+	}
+
+	&__money {
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-image: url('../images/explanation-money.svg');
+			left: 20px;
+			top: 20px;
+		}
+	}
+
+	&__time {
+		position: relative;
+		margin-bottom: 50px;
+		&::before{
+			content: '';
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-image: url('../images/explanation-clock.svg');
+			left: 20px;
+			top: 20px;
+		}
+	}
+
+	&__text {
+		@include mont-600;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 40px;
+		color: #f6fafd;
+	}
+
+	&__btn {
+		width: 220px;
+		height: 70px;
+		background-color: #5e4edb;
+		border-radius: 50px;
+		@include mont-700;
+		font-size: 24px;
+		line-height: 29px;
+		color: #f6fafd;
+	}
+}
+
+
+@media (max-width: 650px) {
+  .explanation {
+    background-position: inherit;
+
+    &__info,
+    &__btn {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 380px) {
+  .explanation {
+    min-height: 79vh;
+
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+      padding: 50px 0 20px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 350px) {
+  .explanation {
+    &__title {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 13px;
+    }
+  }
+}
